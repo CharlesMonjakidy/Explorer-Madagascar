@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Explore Madagascar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <b>EXPLORE<span>MG</span></b>
+    <a href="#places">Destinations</a>
+  </nav>
+
+  <header>
+    <small>🇲🇬 L'ÎLE ROUGE</small>
+    <h1>Découvrez<br><i>Madagascar.</i></h1>
+    <p>Des paysages sauvages, une culture unique et des aventures inoubliables.</p>
+    <a href="#places" class="btn">Explorer ↓</a>
+  </header>
+
+  <main id="places">
+    <div class="head">
+      <small>À EXPLORER</small>
+      <h2>Des endroits qui racontent une histoire.</h2>
+    </div>
+
+    <div class="filters">
+      <button class="active" data-f="all">Tous</button>
+      <button data-f="plage">Plages</button>
+      <button data-f="nature">Nature</button>
+      <button data-f="culture">Culture</button>
+    </div>
+
+    <div id="cards" class="cards"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
