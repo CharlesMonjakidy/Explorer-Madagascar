@@ -1,0 +1,294 @@
+/* RESPONSIVE — TABLETTES ET MOBILES */
+
+@media (max-width: 1050px) {
+    .entete {
+        padding: 0 5%;
+    }
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .bouton-entete {
+        padding: 0 15px;
+        font-size: 10px;
+    }
+
+    .section-large {
+        padding: 90px 6%;
+    }
+
+    .grille-experiences {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience:nth-child(2) {
+        border-right: 0;
+    }
+
+    .experience:nth-child(3),
+    .experience:nth-child(4) {
+        border-top: 1px solid rgba(31, 166, 166, .25);
+    }
+
+    .experience:nth-child(3) {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .barre-haute {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .barre-haute p:last-child {
+        display: none;
+    }
+
+    .entete {
+        min-height: 74px;
+        padding: 0 6%;
+    }
+
+    .bouton-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        padding: 22px 7%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        background: #FFFFFF;
+        box-shadow: 0 15px 25px rgba(31, 166, 166, .12);
+    }
+
+    .navigation.ouverte {
+        display: flex;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .bouton-entete {
+        display: none;
+    }
+
+    .hero {
+        min-height: 680px;
+        padding: 70px 7%;
+        align-items: center;
+    }
+
+    .hero-fond {
+        background-image: linear-gradient(90deg, rgba(31, 166, 166, .9), rgba(31, 166, 166, .45)), url("../Asset/lagon-ifaty.jpg");
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(62px, 15vw, 90px);
+        letter-spacing: -4px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-bas {
+        left: 7%;
+        right: 7%;
+        bottom: 22px;
+        font-size: 8px;
+    }
+
+    .hero-bas span:nth-child(2) {
+        display: none;
+    }
+
+    .hero-indication {
+        display: none;
+    }
+
+    .section-large {
+        padding: 75px 7%;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .intro h2,
+    .entete-section h2,
+    .circuit h2 {
+        font-size: 47px;
+    }
+
+    .entete-section,
+    .circuit-entete {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-note,
+    .circuit-entete > p {
+        max-width: 100%;
+    }
+
+    .grille-destinations {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .carte-destination,
+    .carte-grande {
+        min-height: 440px;
+        grid-row: auto;
+    }
+
+    .citation {
+        grid-template-columns: 1fr;
+    }
+
+    .citation-image {
+        min-height: 350px;
+    }
+
+    .citation-texte {
+        padding: 65px 8%;
+    }
+
+    .grille-experiences {
+        grid-template-columns: 1fr;
+    }
+
+    .experience,
+    .experience:not(:first-child),
+    .experience:nth-child(3) {
+        min-height: auto;
+        padding: 28px 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(31, 166, 166, .25);
+    }
+
+    .experience-icone {
+        margin-bottom: 20px;
+    }
+
+    .circuit-ligne {
+        margin-top: 55px;
+        grid-template-columns: 1fr;
+        border-top: 0;
+        border-left: 1px solid rgba(255, 255, 255, .55);
+        gap: 30px;
+    }
+
+    .etape,
+    .etape:not(:first-child) {
+        padding: 0 0 0 25px;
+    }
+
+    .etape-point {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        margin: 0;
+    }
+
+    .grille-galerie {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 230px 180px 230px;
+        gap: 10px;
+    }
+
+    .galerie-un {
+        grid-row: span 2;
+    }
+
+    .galerie-deux {
+        grid-column: 2;
+    }
+
+    .galerie-trois {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .galerie-quatre {
+        grid-column: 2;
+        grid-row: 2 / span 2;
+    }
+
+    .contact {
+        min-height: 600px;
+        padding: 75px 7% 25px;
+    }
+
+    .contact-deco {
+        right: -40px;
+        top: 0;
+        font-size: 300px;
+    }
+
+    .contact h2 {
+        font-size: clamp(55px, 13vw, 78px);
+        letter-spacing: -3px;
+    }
+
+    .contact-coordonnees {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .pied-page {
+        padding: 35px 7%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pied-page > p {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .retour-haut {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro h2,
+    .entete-section h2,
+    .circuit h2 {
+        font-size: 40px;
+    }
+
+    .carte-destination,
+    .carte-grande {
+        min-height: 370px;
+    }
+
+    .grille-galerie {
+        grid-template-rows: 190px 150px 190px;
+    }
+}

@@ -1,0 +1,67 @@
+/* ANIMATIONS DU SITE */
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flottement {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.hero-contenu > * {
+    animation: apparition .8s both;
+}
+
+.hero-contenu .hero-surtitre {
+    animation-delay: .1s;
+}
+
+.hero-contenu h1 {
+    animation-delay: .2s;
+}
+
+.hero-description {
+    animation-delay: .35s;
+}
+
+.hero-actions {
+    animation-delay: .5s;
+}
+
+.hero-indication span {
+    display: inline-block;
+    animation: flottement 1.7s infinite;
+}
+
+.reveler {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveler.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}

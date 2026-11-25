@@ -1,41 +1,267 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Explore Madagascar</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez Toliara et le Sud-Ouest de Madagascar : Ifaty, Anakao, Nosy Ve, Sarodrano et l'Arboretum d'Antsokay.">
+    <meta name="theme-color" content="#1FA6A6">
+
+    <title>Toliara Éxplore — Le Sud-Ouest vous appelle</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
-
-  <nav>
-    <b>EXPLORE<span>MG</span></b>
-    <a href="#places">Destinations</a>
-  </nav>
-
-  <header>
-    <small>🇲🇬 L'ÎLE ROUGE</small>
-    <h1>Découvrez<br><i>Madagascar.</i></h1>
-    <p>Des paysages sauvages, une culture unique et des aventures inoubliables.</p>
-    <a href="#places" class="btn">Explorer ↓</a>
-  </header>
-
-  <main id="places">
-    <div class="head">
-      <small>À EXPLORER</small>
-      <h2>Des endroits qui racontent une histoire.</h2>
+    <div class="barre-haute">
+        <p>☀️ Bienvenue dans le Sud-Ouest de Madagascar</p>
+        <p>✦ Toliara 601 · La cité du soleil</p>
     </div>
 
-    <div class="filters">
-      <button class="active" data-f="all">Tous</button>
-      <button data-f="plage">Plages</button>
-      <button data-f="nature">Nature</button>
-      <button data-f="culture">Culture</button>
-    </div>
+    <header class="entete" id="accueil">
+        <a class="logo" href="#accueil">
+            <span class="logo-symbole"><img src="Asset/images (1)_1.jpeg" alt=""></span>
+            <span class="logo-texte">TOLIARA<small>ÉXPLORE</small></span>
+        </a>
 
-    <div id="cards" class="cards"></div>
-  </main>
+        <button class="bouton-menu" id="bouton-menu">☰</button>
 
-  <script src="script.js"></script>
+        <nav class="navigation" id="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#experiences">Expériences</a>
+            <a href="#circuit">Circuits</a>
+            <a href="#galerie">Galerie</a>
+        </nav>
+
+        <a class="bouton bouton-sable bouton-entete" href="#contact">Préparer mon voyage <span>↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-fond"></div>
+            <div class="hero-contenu">
+                <p class="surtitre hero-surtitre"><span></span> ATSIMO-ANDREFANA · MADAGASCAR</p>
+                <h1>Le Sud a<br>son <em>paradis.</em></h1>
+                <p class="hero-description">Des lagons turquoise aux terres rouges, vivez une aventure lumineuse au rythme du Sud-Ouest malgache.</p>
+                <div class="hero-actions">
+                    <a class="bouton bouton-sable" href="#destinations">Explorer la région <span>↗</span></a>
+                    <a class="lien-clair" href="#experiences">Découvrir les expériences <span>↓</span></a>
+                </div>
+            </div>
+            <div class="hero-bas">
+                <span>43° 40' E — 23° 21' S</span>
+                <span>UNE TERRE, MILLE ÉMOTIONS</span>
+                <span class="hero-numero">01 <i>/ 04</i></span>
+            </div>
+            <div class="hero-indication">FAITES DÉFILER <span>↓</span>
+            </div>
+        </section>
+
+        <section class="intro section-large">
+            <div class="intro-gauche">
+                <p class="surtitre">✦ L'ESPRIT DU SUD</p>
+                <h2>Un ailleurs qui<br>vous ressemble.</h2>
+            </div>
+            <div class="intro-droite">
+                <p class="texte-intro">Ici, le temps ralentit. Les pirogues Vezo glissent sur l'eau, les baobabs dessinent l'horizon et le soleil colore chaque fin de journée.</p>
+                <p>Bienvenue à Toliara, votre porte d'entrée vers les trésors du littoral sud-ouest de Madagascar.</p>
+                <a class="lien-souligner" href="#destinations">L'histoire commence ici <span>↗</span></a>
+            </div>
+        </section>
+
+        <section class="destinations section-large" id="destinations">
+            <div class="entete-section">
+                <div>
+                    <p class="surtitre">✦ À EXPLORER</p>
+                    <h2>Des lieux qui<br>restent en mémoire.</h2>
+                </div>
+                <p class="section-note">Du bleu infini des lagons à la beauté sauvage de l'arrière-pays, chaque escale révèle une nouvelle facette du Sud.</p>
+            </div>
+
+            <div class="grille-destinations">
+                <article class="carte-destination carte-grande">
+                    <div class="image-destination image-ifaty"></div>
+                    <div class="carte-numero">01 / LITTORAL</div>
+                    <div class="carte-contenu">
+                        <p>LE BLEU À PERTE DE VUE</p>
+                        <h3>Ifaty & Mangily</h3>
+                        <span>Lagon · Plage · Récif corallien</span>
+                    </div>
+                    <a class="carte-fleche" href="#contact">↗</a>
+                </article>
+
+                <article class="carte-destination">
+                    <div class="image-destination image-anakao"></div>
+                    <div class="carte-numero">02 / ÉVASION</div>
+                    <div class="carte-contenu">
+                        <p>AU RYTHME DES VEZO</p>
+                        <h3>Anakao</h3>
+                        <span>Pirogue · Plage · Authenticité</span>
+                    </div>
+                    <a class="carte-fleche" href="#contact">↗</a>
+                </article>
+
+                <article class="carte-destination">
+                    <div class="image-destination image-nosy"></div>
+                    <div class="carte-numero">03 / NATURE</div>
+                    <div class="carte-contenu">
+                        <p>UNE ÎLE À PART</p>
+                        <h3>Nosy Ve</h3>
+                        <span>Îlot · Oiseaux marins · Océan</span>
+                    </div>
+                    <a class="carte-fleche" href="#contact">↗</a>
+                </article>
+
+                <article class="carte-destination">
+                    <div class="image-destination image-antsokay"></div>
+                    <div class="carte-numero">04 / BIODIVERSITÉ</div>
+                    <div class="carte-contenu">
+                        <p>LA BEAUTÉ DU VIVANT</p>
+                        <h3>Antsokay</h3>
+                        <span>Flore endémique · Botanique</span>
+                    </div>
+                    <a class="carte-fleche" href="#contact">↗</a>
+                </article>
+
+                <article class="carte-destination">
+                    <div class="image-destination image-sarodrano"></div>
+                    <div class="carte-numero">05 / PANORAMA</div>
+                    <div class="carte-contenu">
+                        <p>ENTRE TERRE ET MER</p>
+                        <h3>Sarodrano</h3>
+                        <span>Baie · Paysages · Découverte</span>
+                    </div>
+                    <a class="carte-fleche" href="#contact">↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="citation">
+            <div class="citation-image"></div>
+            <div class="citation-texte">
+                <p class="surtitre">✦ L'ÂME DE TOLIARA</p>
+                <h2>« Mora mora ».<br>Le bonheur prend<br>son temps.</h2>
+                <p>Rencontrez une culture généreuse, découvrez les traditions du peuple Vezo et laissez-vous porter par l'hospitalité du Sud.</p>
+                <a class="bouton bouton-blanc" href="#experiences">Vivre la culture locale <span>↗</span></a>
+            </div>
+        </section>
+
+        <section class="experiences section-large" id="experiences">
+            <div class="entete-section">
+                <div>
+                    <p class="surtitre">✦ À VIVRE ABSOLUMENT</p>
+                    <h2>Faites place<br>à l'aventure.</h2>
+                </div>
+                <p class="section-note">Des moments simples, des souvenirs intenses. Choisissez votre façon de découvrir le Sud.</p>
+            </div>
+
+            <div class="grille-experiences">
+                <article class="experience">
+                    <span class="experience-icone">◉</span>
+                    <p class="experience-numero">01 — OCÉAN</p>
+                    <h3>Plongée & snorkeling</h3>
+                    <p>Explorez les fonds marins et les récifs du littoral, dans le respect de cet écosystème fragile.</p>
+                </article>
+                <article class="experience">
+                    <span class="experience-icone">⌁</span>
+                    <p class="experience-numero">02 — TRADITION</p>
+                    <h3>Sortie en pirogue</h3>
+                    <p>Partez sur l'eau avec les paysages côtiers et découvrez les savoir-faire des pêcheurs Vezo.</p>
+                </article>
+                <article class="experience">
+                    <span class="experience-icone">✺</span>
+                    <p class="experience-numero">03 — NATURE</p>
+                    <h3>Balade botanique</h3>
+                    <p>Découvrez les plantes étonnantes et la biodiversité unique de la forêt épineuse du Sud.</p>
+                </article>
+                <article class="experience">
+                    <span class="experience-icone">☼</span>
+                    <p class="experience-numero">04 — INSTANT</p>
+                    <h3>Coucher de soleil</h3>
+                    <p>Terminez la journée face à l'océan, quand le ciel se pare des couleurs du sable doré.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="circuit section-large" id="circuit">
+            <div class="circuit-entete">
+                <div>
+                    <p class="surtitre">✦ UNE IDÉE DE VOYAGE</p>
+                    <h2>Le Sud en<br>quelques escales.</h2>
+                </div>
+                <p>Un exemple de parcours pour prendre le temps de découvrir les paysages et les ambiances autour de Toliara.</p>
+            </div>
+            <div class="circuit-ligne">
+                <article class="etape">
+                    <span class="etape-point">01</span>
+                    <p>JOUR 1</p>
+                    <h3>Toliara</h3>
+                    <span>Premiers pas dans la cité du soleil, marchés et découverte locale.</span>
+                </article>
+                <article class="etape">
+                    <span class="etape-point">02</span>
+                    <p>JOUR 2</p>
+                    <h3>Ifaty</h3>
+                    <span>Direction le lagon : plage, détente et activités marines.</span>
+                </article>
+                <article class="etape">
+                    <span class="etape-point">03</span>
+                    <p>JOUR 3</p>
+                    <h3>Antsokay</h3>
+                    <span>Une parenthèse nature à la découverte de la flore du Sud.</span>
+                </article>
+                <article class="etape">
+                    <span class="etape-point">04</span>
+                    <p>JOUR 4+</p>
+                    <h3>Anakao</h3>
+                    <span>Prolongez l'aventure vers le littoral et les îles voisines.</span>
+                </article>
+            </div>
+            <p class="note-circuit">* Parcours indicatif : les déplacements, durées et conditions d'accès sont à confirmer auprès des prestataires locaux.</p>
+        </section>
+
+        <section class="galerie section-large" id="galerie">
+            <div class="entete-section">
+                <div>
+                    <p class="surtitre">✦ INSTANTS DU SUD</p>
+                    <h2>Un avant-goût<br>du voyage.</h2>
+                </div>
+                <p class="section-note">Laissez les couleurs du Sud-Ouest vous donner envie de partir.</p>
+            </div>
+            <div class="grille-galerie">
+                <div class="photo-galerie galerie-un"><span>01 / LAGON</span></div>
+                <div class="photo-galerie galerie-deux"><span>02 / CULTURE VEZO</span></div>
+                <div class="photo-galerie galerie-trois"><span>03 / TERRE DU SUD</span></div>
+                <div class="photo-galerie galerie-quatre"><span>04 / MONDE MARIN</span></div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-deco">T.</div>
+            <div class="contact-contenu">
+                <p class="surtitre">✦ VOTRE PROCHAINE HISTOIRE COMMENCE ICI</p>
+                <h2>Et si votre<br>prochain voyage<br>était <em>à Toliara ?</em></h2>
+                <p>Une question, une envie de circuit ou besoin d'informations ? Écrivez-nous pour préparer votre découverte du Sud-Ouest.</p>
+                <a class="bouton bouton-sable" href="mailto:charlesmonjakidy@gmail.com?subject=Mon%20voyage%20%C3%A0%20Toliara">Nous contacter <span>↗</span></a>
+            </div>
+            <div class="contact-coordonnees">
+                <span>TOliara · 601</span>
+                <span>ATSIMO-ANDREFANA, MADAGASCAR</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied-page">
+        <a class="logo logo-pied" href="#accueil">
+            <span class="logo-symbole2">T<span>✦</span></span>
+            <span class="logo-texte">TOLIARA<small>ÉXPLORE</small></span>
+        </a>
+        <p>Le Sud-Ouest vous appelle. Répondez à son invitation.</p>
+        <a class="retour-haut" href="#accueil">Retour en haut ↑</a>
+        <small>© 2026 Toliara Éxplore — Site de découverte touristique.</small>
+    </footer>
+
+    <button class="retour-flottant" id="retour-haut">↑</button>
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,825 @@
+/* =========================================
+   TOLIARA ÉVASION — STYLE PRINCIPAL
+   Palette : blanc, turquoise lagon, sable doré
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FFFFFF;
+    color: #1FA6A6;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.barre-haute {
+    min-height: 34px;
+    padding: 8px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: #1FA6A6;
+    color: #FFFFFF;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.entete {
+    min-height: 88px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: #FFFFFF;
+    position: relative;
+    z-index: 20;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #1FA6A6;
+    flex-shrink: 0;
+}
+
+.logo-symbole img{
+    width: 45px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid transparent; */
+    border-radius: 50%;
+    font-size: 25px;
+    position: relative;
+}
+
+.logo-symbole2 {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #1FA6A6;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 800;
+    position: relative;
+}
+
+.logo-symbole2 span {
+    color: #D9B26F;
+    font-size: 12px;
+    position: absolute;
+    top: 1px;
+    right: 4px;
+}
+
+.logo-texte {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo-texte small {
+    display: block;
+    margin-top: 3px;
+    font-size: 9px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 2.5vw, 38px);
+}
+
+.navigation a {
+    color: #1FA6A6;
+    font-size: 12px;
+    font-weight: 700;
+    transition: color .25s;
+}
+
+.navigation a:hover {
+    color: #D9B26F;
+}
+
+.bouton {
+    min-height: 48px;
+    padding: 0 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 800;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.bouton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(31, 166, 166, .18);
+}
+
+.bouton span {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #1FA6A6;
+    font-size: 15px;
+}
+
+.bouton-sable {
+    background: #D9B26F;
+    color: #FFFFFF;
+}
+
+.bouton-blanc {
+    background: #FFFFFF;
+    color: #1FA6A6;
+}
+
+.bouton-menu {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: #1FA6A6;
+    font-size: 25px;
+}
+
+.hero {
+    min-height: min(760px, 82vh);
+    min-height: clamp(590px, 82vh, 820px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    overflow: hidden;
+    background: #1FA6A6;
+    color: #FFFFFF;
+}
+
+.hero-fond {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(31, 166, 166, .96) 0%, rgba(31, 166, 166, .78) 40%, rgba(31, 166, 166, .12) 100%), url("../Asset/lagon-ifaty.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.03);
+}
+
+.hero-contenu {
+    width: min(620px, 100%);
+    position: relative;
+    z-index: 2;
+}
+
+.surtitre {
+    margin-bottom: 22px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.4px;
+}
+
+.hero-surtitre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-surtitre span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #D9B26F;
+}
+
+.hero h1 {
+    font-size: clamp(64px, 9vw, 118px);
+    line-height: .91;
+    letter-spacing: -7px;
+    font-weight: 900;
+}
+
+.hero h1 em,
+.contact h2 em {
+    color: #D9B26F;
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+.hero-description {
+    max-width: 440px;
+    margin-top: 28px;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+.lien-clair {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 7px;
+}
+
+.lien-clair span {
+    margin-left: 8px;
+}
+
+.hero-bas {
+    position: absolute;
+    bottom: 30px;
+    left: 7%;
+    right: 7%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.hero-numero {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.hero-numero i {
+    font-size: 11px;
+    font-style: normal;
+    opacity: .7;
+}
+
+.hero-indication {
+    position: absolute;
+    right: 4%;
+    bottom: 45%;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.hero-indication span {
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.section-large {
+    padding: 115px 9%;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12%;
+    align-items: center;
+}
+
+.intro h2,
+.entete-section h2,
+.circuit h2 {
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.02;
+    letter-spacing: -2.5px;
+    font-weight: 900;
+}
+
+.intro-droite {
+    max-width: 490px;
+    color: #1FA6A6;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.texte-intro {
+    margin-bottom: 16px;
+    font-size: 19px;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+.lien-souligner {
+    display: inline-block;
+    margin-top: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9B26F;
+    color: #1FA6A6;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.lien-souligner span {
+    margin-left: 20px;
+    color: #D9B26F;
+}
+
+.destinations {
+    background: #1FA6A6;
+    color: #FFFFFF;
+}
+
+.entete-section {
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+}
+
+.entete-section .surtitre,
+.circuit .surtitre {
+    color: #D9B26F;
+}
+
+.section-note {
+    max-width: 330px;
+    padding-bottom: 8px;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.grille-destinations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.carte-destination {
+    min-height: 430px;
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.carte-grande {
+    grid-row: span 2;
+    min-height: 882px;
+}
+
+.image-destination {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .7s;
+}
+
+.carte-destination:hover .image-destination {
+    transform: scale(1.07);
+}
+
+.image-destination::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(31, 166, 166, .88), rgba(31, 166, 166, .02) 72%);
+}
+
+.image-ifaty {
+    background-image: url("../Asset/images\ \(3\)_1.jpeg");
+}
+
+.image-anakao {
+    background-image: url("../Asset/pirogue-vezo.jpg");
+}
+
+.image-nosy {
+    background-image: url("../Asset/images\ \(1\)_2.jpeg");
+}
+
+.image-antsokay {
+    background-image: url("../Asset/images\ \(4\)_1.jpeg");
+}
+
+.image-sarodrano {
+    background-image: url("../Asset/images\ \(5\)_1.jpeg");
+    background-position: 75% center;
+}
+
+.carte-numero {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+    padding: 9px 12px;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+.carte-contenu {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 2;
+}
+
+.carte-contenu p {
+    margin-bottom: 10px;
+    color: #D9B26F;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.carte-contenu h3 {
+    margin-bottom: 8px;
+    font-size: clamp(26px, 3vw, 38px);
+    letter-spacing: -1px;
+}
+
+.carte-contenu span {
+    font-size: 11px;
+}
+
+.carte-fleche {
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    right: 25px;
+    bottom: 28px;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #D9B26F;
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: transform .25s;
+}
+
+.carte-fleche:hover {
+    transform: rotate(45deg);
+}
+
+.citation {
+    min-height: 610px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #D9B26F;
+    color: #FFFFFF;
+}
+
+.citation-image {
+    min-height: 610px;
+    background: url("../Asset/pirogue-vezo.jpg") center / cover;
+}
+
+.citation-texte {
+    padding: 85px 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.citation-texte .surtitre {
+    color: #FFFFFF;
+}
+
+.citation-texte h2 {
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 400;
+}
+
+.citation-texte > p:not(.surtitre) {
+    max-width: 410px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.experiences {
+    background: #FFFFFF;
+}
+
+.grille-experiences {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid rgba(31, 166, 166, .25);
+}
+
+.experience {
+    min-height: 300px;
+    padding: 35px 24px 20px 0;
+    border-right: 1px solid rgba(31, 166, 166, .25);
+}
+
+.experience:not(:first-child) {
+    padding-left: 24px;
+}
+
+.experience:last-child {
+    border-right: 0;
+}
+
+.experience-icone {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #D9B26F;
+    color: #FFFFFF;
+    font-size: 26px;
+}
+
+.experience-numero {
+    margin-bottom: 12px;
+    color: #D9B26F;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.experience h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: -.5px;
+}
+
+.experience > p:last-child {
+    color: #1FA6A6;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.circuit {
+    background: #1FA6A6;
+    color: #FFFFFF;
+}
+
+.circuit-entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+}
+
+.circuit-entete > p {
+    max-width: 330px;
+    padding-bottom: 8px;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.circuit-ligne {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid rgba(255, 255, 255, .55);
+}
+
+.etape {
+    padding: 0 20px 10px 0;
+    position: relative;
+}
+
+.etape:not(:first-child) {
+    padding-left: 20px;
+}
+
+.etape-point {
+    width: 39px;
+    height: 39px;
+    margin-top: -20px;
+    margin-bottom: 28px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #D9B26F;
+    border-radius: 50%;
+    background: #1FA6A6;
+    color: #D9B26F;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.etape > p {
+    margin-bottom: 12px;
+    color: #D9B26F;
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.etape h3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.etape > span:last-child {
+    display: block;
+    max-width: 220px;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.note-circuit {
+    margin-top: 45px;
+    color: #FFFFFF;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.galerie {
+    background: #FFFFFF;
+}
+
+.grille-galerie {
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1.2fr .8fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 14px;
+}
+
+.photo-galerie {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.photo-galerie::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(31, 166, 166, .7), transparent 55%);
+}
+
+.photo-galerie span {
+    position: absolute;
+    bottom: 18px;
+    left: 20px;
+    z-index: 2;
+    color: #FFFFFF;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.galerie-un {
+    grid-row: span 2;
+    background-image: url("../Asset/lagon-ifaty.jpg");
+}
+
+.galerie-deux {
+    background-image: url("../Asset/pirogue-vezo.jpg");
+}
+
+.galerie-trois {
+    background-image: url("../Asset/baobabs-sud.jpg");
+}
+
+.galerie-quatre {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    background-image: url("../Asset/recif-corallien.jpg");
+}
+
+.contact {
+    min-height: 650px;
+    padding: 100px 10% 35px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1FA6A6;
+    color: #FFFFFF;
+}
+
+.contact-deco {
+    position: absolute;
+    right: -20px;
+    top: -130px;
+    color: rgba(255, 255, 255, .1);
+    font-size: 550px;
+    line-height: 1;
+    font-weight: 900;
+    pointer-events: none;
+}
+
+.contact-contenu {
+    position: relative;
+    z-index: 2;
+}
+
+.contact h2 {
+    margin-bottom: 25px;
+    font-size: clamp(52px, 8vw, 100px);
+    line-height: .95;
+    letter-spacing: -5px;
+}
+
+.contact-contenu > p:not(.surtitre) {
+    max-width: 440px;
+    margin-bottom: 28px;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.contact-coordonnees {
+    margin-top: 70px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .4);
+    color: #FFFFFF;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.pied-page {
+    min-height: 180px;
+    padding: 35px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    gap: 20px;
+    background: #FFFFFF;
+    color: #1FA6A6;
+}
+
+.pied-page > p {
+    font-size: 12px;
+}
+
+.retour-haut {
+    justify-self: end;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.pied-page > small {
+    grid-column: 1 / -1;
+    padding-top: 20px;
+    border-top: 1px solid rgba(31, 166, 166, .2);
+    font-size: 10px;
+}
+
+.retour-flottant {
+    width: 43px;
+    height: 43px;
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 15;
+    display: none;
+    border: 0;
+    border-radius: 50%;
+    background: #D9B26F;
+    color: #FFFFFF;
+    font-size: 20px;
+    box-shadow: 0 5px 18px rgba(31, 166, 166, .2);
+}
+
+.retour-flottant.visible {
+    display: block;
+}
